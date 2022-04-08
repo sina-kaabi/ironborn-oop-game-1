@@ -4,7 +4,7 @@ class Game {
     constructor(create, draw){
         this.time = 0;
         this.player = null;
-        this.obstacles = [];
+        this.obstacles = []; // array of instances of the class Obstacle
         this.create = create;
         this.draw = draw;
     }
@@ -23,6 +23,7 @@ class Game {
                 obstacle.moveDown();
                 this.draw(obstacle);
                 this.detectCollision(obstacle);
+                this.detectObstacleOutside(obstacle);
             });
 
             // create & draw an obstacles
@@ -43,6 +44,13 @@ class Game {
             this.player.positionY < obstacle.positionY + obstacle.height &&
             this.player.height + this.player.positionY > obstacle.positionY) {
                 console.log("game over")
+        }
+    }
+
+    detectObstacleOutside(obstacle){
+        if(obstacle.positionY < 0){
+            this.obstacles.shift(); // remove from array
+            obstacle.domElement.remove(); // remove from the dom
         }
     }
     
