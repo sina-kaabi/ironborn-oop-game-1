@@ -6,12 +6,14 @@ img {
    /*Set a fixed size for width and height and in an absolute position*/
  
    /*Style for the Score container*/
-   .scoreContainer {
+  
+  
+   .healthContainer {
     background-color: black;
     width: 15%;
     height: 15%;
     color: #ffffff;
-    top: 5%;
+    top: 13px;
     right: 5%;
     border: 2px solid greenyellow;
     border-radius: 10px;
@@ -20,14 +22,82 @@ img {
     flex-direction: column;
     align-items: center;
    }
+  
+  
+  
+  
+  
+  
+  
+  
+   .scoreContainer {
+    background-color: rgb(10, 10, 10);
+    
+    width: 15%;
+    height: 15%;
+    color: #ffffff;
+    top: 13px;
+    right: 15%;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    display: flex;
+    position: fixed;
+    left: 13px;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .levelsContainer {
+    background-color: black;
+    left: 310px;
+    width: 15%;
+    height: 15%;
+    color: #ffffff;
+    top: 13px;
+    right: 15%;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+   }
+
+
+
    #score-text {
     font-size: 1.5em;
    }
+
+   #health-text {
+    font-size: 1.5em;
+   }
+
+
+   #levels-text {
+    font-size: 1.5em;
+   }
+
+
+
+   #health-counter {
+    font-size: 3.1em;
+    font-weight: bold;
+    color: #06e515;
+   }
+
    #score-counter {
     font-size: 3.1em;
     font-weight: bold;
     color: #06e515;
    }
+
+   #levels-counter {
+    font-size: 3.1em;
+    font-weight: bold;
+    color: #06e515;
+   }
+
 
    #box {
        font-size: 1.5em;
