@@ -1,19 +1,41 @@
-/*Make any img element responsive*/
+/*making any img element responsive*/
 img {
     max-width: 100%;
     max-height: 100%;
    }
-   /*Set a fixed size for width and height and in an absolute position*/
+ 
  
    /*Style for the Score container*/
-  
+  .container {
+    border: 2.5px solid rgb(194, 187, 187);
+    border-radius: 10px;
+    border-style: groove;
+    position: relative;
+    top: 1px;
+    width: 1950px;
+       height: 1650px;
+  }
+
+  .squares-panel {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1vh;
+    width: 11vw;
+    height: 15vh;
+    background-color: rgb(216, 162, 46);
+    position: relative;
+    left: 20px;
+    top: -965px;
+    
+
+  }
   
    .healthContainer {
     background-color: black;
-    width: 15%;
-    height: 15%;
+    width: 5%;
+    height: 10%;
     color: #ffffff;
-    top: 13px;
+    top: 28px;
     right: 5%;
     border: 2px solid greenyellow;
     border-radius: 10px;
@@ -33,28 +55,28 @@ img {
    .scoreContainer {
     background-color: rgb(10, 10, 10);
     
-    width: 15%;
-    height: 15%;
+    width: 5%;
+    height: 10%;
     color: #ffffff;
-    top: 13px;
+    top: 28px;
     right: 15%;
     border: 2px solid greenyellow;
     border-radius: 10px;
     display: flex;
     position: fixed;
-    left: 13px;
+    left: 70px;
     flex-direction: column;
     align-items: center;
    }
 
    .levelsContainer {
     background-color: black;
-    left: 310px;
-    width: 15%;
-    height: 15%;
+    width: 5%;
+    height: 10%;
     color: #ffffff;
-    top: 13px;
-    right: 15%;
+    top: 28px;
+    
+    left: 280px;
     border: 2px solid greenyellow;
     border-radius: 10px;
     display: flex;
@@ -63,7 +85,7 @@ img {
     align-items: center;
    }
 
-
+   
 
    #score-text {
     font-size: 1.5em;
@@ -115,6 +137,7 @@ img {
    h1 {
     text-align: center; 
 }
+
 h1 span { 
     background-color: green;
     width: max-content; 
@@ -131,11 +154,23 @@ h1 span {
   #snakes {
    
     background-repeat: no-repeat;
-    border: 2.5px solid rgb(255, 95, 47);
+    border: 1.7px solid rgb(255, 95, 47);
        background-color: crimson;
-       border-radius: 2px;
-       max-width: 100%;
+       border-radius: 25px;
+       max-width: 120%;
        max-height: 100%;
+       padding: 20px;
+       top: 300px;
+       background-size: contain;
+       
+
        
 
    }
+
+  body {
+     background-color: rgb(255, 255, 255);
+     
+  }
+
+  
